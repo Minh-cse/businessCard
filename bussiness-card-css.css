@@ -1,0 +1,57 @@
+body {
+  margin: 20px; 
+  font-family: Garamond ;
+}
+.avatar{
+  width: 150px;
+}
+.card {
+  padding: 20px;
+  width: 600px;
+  display: flex; 
+  justify-content: space-around; 
+  margin: 0 auto;
+  text-align: right;
+  color: #d5cfcf;
+  border-bottom: 5px solid #eddea4;
+  background-color: #0fa3b1;
+  text-shadow: 2px 2px 5px rgb(35, 34, 34);
+  
+}
+.blue-border{
+  border: 1px dotted blue;
+}
+img {
+  box-shadow: 5px 5px cyan;
+}
+a:hover {
+  background-color: #0fa3b1;
+  font-size: 17px;
+}
+@keyframes myAnimation {
+  from {
+        font-size: 5px;}
+  to {
+      font-size: 20px;}
+}
+@keyframes nameAnimation {
+  0% {
+    transform: translateY(0);
+    color: #d5cfcf
+  }
+  100% {
+    transform: translateY(-10px);
+    color: #f2f5ff
+  }
+}
+.jump-on-hover {
+  display: inline-block;
+  transition: transform 0.3s ease-in;
+}
+
+.jump-on-hover:hover {
+  animation: nameAnimation 0.4s forwards;
+}
+
+
+
